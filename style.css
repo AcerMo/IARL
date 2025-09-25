@@ -1,28 +1,26 @@
-/* 基础样式 */
+/* 全局 */
 body {
-  font-family: "Microsoft YaHei", Arial, sans-serif;
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
-/* 容器宽度控制 */
 .container {
   width: 85%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
-  overflow: hidden;
   padding: 20px;
 }
 
 /* 头部 */
 header {
-  background: #004080;
+  background: #002855;
   color: #fff;
-  padding: 30px 0;
   text-align: center;
+  padding: 40px 0;
 }
 
 header h1 {
@@ -31,34 +29,158 @@ header h1 {
 }
 
 .subtitle {
-  font-size: 1.2em;
   margin-top: 10px;
-  opacity: 0.9;
+  font-size: 1.2em;
+  opacity: 0.85;
 }
 
-/* 主体 */
-main h2 {
-  color: #004080;
-  margin-top: 30px;
-  border-left: 5px solid #004080;
+/* 标题 */
+section h2 {
+  margin-top: 40px;
+  color: #002855;
+  border-left: 5px solid #002855;
   padding-left: 10px;
 }
 
-ul {
-  padding-left: 20px;
+/* Visualization 模块 */
+.module {
+  background: #fff;
+  margin: 25px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.module {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.video video {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  align-items: start;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.description {
+  grid-column: span 2;
+  margin-top: 15px;
+  font-size: 0.95em;
+  color: #444;
 }
 
 /* 页脚 */
 footer {
+  text-align: center;
   background: #333;
   color: #fff;
-  text-align: center;
   padding: 15px 0;
   margin-top: 40px;
   font-size: 0.9em;
 }
+/* 全局 */
+body {
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-footer a {
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 头部 */
+header {
+  background: #002855;
   color: #fff;
-  text-decoration: underline;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2em;
+  opacity: 0.85;
+}
+
+/* 标题 */
+section h2 {
+  margin-top: 40px;
+  color: #002855;
+  border-left: 5px solid #002855;
+  padding-left: 10px;
+}
+
+/* Visualization 模块 */
+.module {
+  background: #fff;
+  margin: 25px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.module {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.video video {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  align-items: start;
+}
+
+.images img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.description {
+  grid-column: span 2;
+  margin-top: 15px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
 }
