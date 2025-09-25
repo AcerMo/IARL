@@ -6,129 +6,84 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 侧边目录 -->
-  <nav class="sidebar">
-    <h3>Contents</h3>
-    <ul>
-      <li><a href="#intro">Introduction</a></li>
-      <li>
-        <a href="#visualization">Visualization</a>
-        <ul>
-          <li><a href="#exp-vis">Experiment Visualizations</a></li>
-          <li><a href="#gen-test">Generalization Tests</a></li>
-        </ul>
-      </li>
-      <li><a href="#future">Future Prospect</a></li>
-      <li><a href="#related">Related Work</a></li>
-    </ul>
-  </nav>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>目录</h2>
+    <a href="#intro">Introduction</a>
+    <a href="#visualization">Visualization</a>
+    <a href="#future">Future Prospect</a>
+    <a href="#related">Related Work</a>
+  </div>
 
-  <main class="content">
-    <!-- 顶部标题 -->
-    <header>
-      <h1>Visualization of Agent Replays</h1>
-      <p class="subtitle">— LIAL: LLM assisted Intention-Aligned Reinforcement Learning</p>
-    </header>
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Visualization of Agent Replays<br>—LIAL: LLM assisted Intention-Aligned Reinforcement Learning</h1>
 
     <!-- Introduction -->
     <section id="intro">
       <h2>Introduction</h2>
-      <p>
-        This project explores LLM-assisted intention alignment in reinforcement learning.
-        By combining large language models with reinforcement learning, we provide novel
-        frameworks for agent behavior visualization and trajectory analysis.
-      </p>
+      <p>简要介绍项目目标、研究意义和技术路线……</p>
     </section>
 
     <!-- Visualization -->
     <section id="visualization">
       <h2>Visualization</h2>
 
-      <!-- 子部分 1：实验可视化 -->
-      <h3 id="exp-vis">Experiment Visualizations</h3>
-      <!-- 八个展示模块 -->
-      <div class="module">
-        <h4>Module 1: Example Scenario</h4>
-        <div class="module-body">
-          <div class="video">
-            <video controls>
-              <source src="media/宇宙.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      <!-- 正文实验展示 -->
+      <h3>Experiment Visualization</h3>
+      <div class="viz-block">
+        <div class="viz-title">Module 1: Example Title</div>
+        <div class="viz-media">
+          <video controls src="video1.mp4"></video>
           <div class="images">
-            <img src="media/自由.jpg" alt="Gen Fig 1">
-            <img src="media/牛组.jpg" alt="Gen Fig 2">
-            <img src="media/自由立像.ipg" alt="Figure 3">
+            <img src="img1.png" alt="image1">
+            <img src="img2.png" alt="image2">
+            <img src="img3.png" alt="image3">
           </div>
         </div>
-        <div class="info">
-          <p><strong>Strategy:</strong> PPO</p>
-          <p><strong>Faithful Execution:</strong> Yes</p>
-          <p><strong>Win Rate:</strong> 78%</p>
-        </div>
-        <div class="description">
-          <p>
-            This module shows how the PPO strategy is applied in the given scenario. 
-            The agent behavior aligns with the intended task and demonstrates competitive performance.
-          </p>
+        <div class="viz-info">
+          <p>说明文字：简要介绍该模块展示的实验内容。</p>
+          <p>使用策略：XXX</p>
+          <p>忠实执行：Yes/No</p>
+          <p>胜率：85%</p>
         </div>
       </div>
-      <!-- 复制此 module 结构共 8 个 -->
 
-      <!-- 子部分 2：泛化性测试 -->
-      <h3 id="gen-test">Generalization Tests</h3>
-      <!-- 两个展示模块 -->
-      <div class="module">
-        <h4>Generalization Test 1: New Environment</h4>
-        <div class="module-body">
-          <div class="video">
-            <video controls>
-              <source src="media/宇宙.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      <!-- 泛化性测试展示 -->
+      <h3>Generalization Test Results</h3>
+      <div class="viz-block">
+        <div class="viz-title">Module 9: Generalization Example</div>
+        <div class="viz-media">
+          <video controls src="video9.mp4"></video>
           <div class="images">
-            <img src="media/自由.jpg" alt="Gen Fig 1">
-            <img src="media/牛组.jpg" alt="Gen Fig 2">
+            <img src="img9-1.png" alt="image">
+            <img src="img9-2.png" alt="image">
+            <img src="img9-3.png" alt="image">
           </div>
         </div>
-        <div class="info">
-          <p><strong>Strategy:</strong> G2ANet</p>
-          <p><strong>Faithful Execution:</strong> Partial</p>
-          <p><strong>Win Rate:</strong> 62%</p>
-        </div>
-        <div class="description">
-          <p>
-            This generalization test evaluates the robustness of the G2ANet-based policy 
-            when deployed in an unseen environment, highlighting adaptability challenges.
-          </p>
+        <div class="viz-info">
+          <p>说明文字：该模块展示了泛化性实验结果。</p>
+          <p>使用策略：YYY</p>
+          <p>忠实执行：Yes</p>
+          <p>胜率：72%</p>
         </div>
       </div>
-      <!-- 复制此 module 结构共 2 个 -->
     </section>
 
     <!-- Future Prospect -->
     <section id="future">
       <h2>Future Prospect</h2>
-      <p>
-        In the future, we plan to extend intention-aligned reinforcement learning to
-        multi-agent systems, enabling more complex coordination tasks and integrating
-        real-world applications in robotics and decision-making.
-      </p>
+      <p>对未来研究方向的展望说明……</p>
     </section>
 
     <!-- Related Work -->
     <section id="related">
       <h2>Related Work</h2>
-      <p>
-        📖 <a href="https://arxiv.org/" target="_blank">Paper Link</a><br>
-      </p>
+      <ul>
+        <li><a href="#">论文链接</a></li>
+        <li><a href="#">GitHub 链接</a></li>
+      </ul>
     </section>
-
-    <footer>
-      <p>© 2025 LIAL Research Group | Powered by Netlify</p>
-    </footer>
-  </main>
+  </div>
 </body>
 </html>
