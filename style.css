@@ -1,86 +1,225 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Sidebar */
+/* 标题样式 */
+header {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* 布局容器 */
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 左侧导航栏 */
 .sidebar {
-  width: 220px;
-  background: #333;
-  color: white;
-  height: 100vh;
-  position: fixed;
-  overflow-y: auto;
-  padding: 20px;
+    width: 250px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-right: 2rem;
 }
+
 .sidebar h2 {
-  font-size: 18px;
-  margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1a2a6c;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
 }
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 0.8rem;
+}
+
 .sidebar a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin: 10px 0;
-}
-.sidebar a:hover {
-  text-decoration: underline;
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+    display: block;
+    padding: 0.5rem 0;
+    border-left: 3px solid transparent;
+    padding-left: 10px;
 }
 
-/* Main content */
-.content {
-  margin-left: 240px;
-  padding: 20px;
-  flex: 1;
+.sidebar a:hover, .sidebar a.active {
+    color: #1a2a6c;
+    border-left: 3px solid #1a2a6c;
+    background-color: #f8f9fa;
 }
+
+/* 主内容区域 */
+.main-content {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
 section {
-  margin-bottom: 60px;
-}
-h1, h2, h3 {
-  color: #333;
+    margin-bottom: 3rem;
+    scroll-margin-top: 20px;
 }
 
-/* Visualization block */
-.viz-block {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 30px;
-}
-.viz-title {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.viz-media {
-  display: flex;
-  gap: 10px;
+section h2 {
+    font-size: 1.8rem;
+    color: #1a2a6c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
 }
 
-/* 视频和图片统一宽高比 */
-.viz-media video,
-.viz-media img {
-  width: 100%;
-  aspect-ratio: 16 / 9;  /* 保持16:9比例 */
-  object-fit: cover;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+section p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
 }
 
-/* 视频占一半，图片组占一半 */
-.viz-media video {
-  flex: 1;
-}
-.viz-media .images {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+/* 可视化模块样式 */
+.visualization-section {
+    margin-bottom: 2rem;
 }
 
-.viz-info {
-  margin-top: 10px;
-  font-size: 14px;
+.visualization-section h3 {
+    font-size: 1.5rem;
+    color: #b21f1f;
+    margin-bottom: 1.5rem;
 }
-.viz-info p {
-  margin: 4px 0;
+
+.visualization-module {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.visualization-module h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.video-container, .image-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.video-container video, .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.image-container img {
+    flex: 1;
+}
+
+.module-info {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+}
+
+.module-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* 相关工作部分 */
+.related-work {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.related-work h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.related-work ul {
+    padding-left: 1.5rem;
+}
+
+.related-work li {
+    margin-bottom: 0.8rem;
+}
+
+.related-work a {
+    color: #1a2a6c;
+    text-decoration: none;
+}
+
+.related-work a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: static;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .media-container {
+        flex-direction: column;
+    }
 }
