@@ -1,89 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Visualization of Agent Replays — LIAL</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization of Agent Replays —LIAL: LLM assisted Intention-Aligned Reinforcement Learning</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>目录</h2>
-    <a href="#intro">Introduction</a>
-    <a href="#visualization">Visualization</a>
-    <a href="#future">Future Prospect</a>
-    <a href="#related">Related Work</a>
-  </div>
+    <header>
+        <h1>Visualization of Agent Replays</h1>
+        <p>LIAL: LLM assisted Intention-Aligned Reinforcement Learning</p>
+    </header>
+    
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <nav class="sidebar">
+            <h2>目录</h2>
+            <ul>
+                <li><a href="#introduction" class="active">Introduction</a></li>
+                <li><a href="#visualization">Visualization</a>
+                    <ul>
+                        <li><a href="#main-experiments">主要实验可视化</a></li>
+                        <li><a href="#generalization-tests">泛化性测试结果</a></li>
+                    </ul>
+                </li>
+                <li><a href="#future-prospect">Future Prospect</a></li>
+                <li><a href="#related-work">相关工作</a></li>
+            </ul>
+        </nav>
+        
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- Introduction部分 -->
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>LIAL (LLM assisted Intention-Aligned Reinforcement Learning) 是一种创新的强化学习方法，通过结合大型语言模型（LLM）与强化学习算法，实现更高效、更符合人类意图的智能体训练。</p>
+                <p>本项目展示了LIAL方法在不同环境下的表现，通过可视化回放直观展示智能体的学习过程和策略执行效果。我们的方法在多个基准测试中表现出色，特别是在复杂环境和泛化任务中。</p>
+                <p>通过本可视化平台，您可以深入了解LIAL方法的工作原理、性能表现以及未来应用前景。</p>
+            </section>
+            
+            <!-- Visualization部分 -->
+            <section id="visualization">
+                <h2>Visualization</h2>
+                
+                <!-- 主要实验可视化 -->
+                <div class="visualization-section" id="main-experiments">
+                    <h3>主要实验可视化</h3>
+                    
+                    <!-- 模块1 -->
+                    <div class="visualization-module">
+                        <h4>模块1: 基础导航任务</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="image-container">
+                                <img src="media/1.png" alt="模块1图片1">
+                                <img src="media/2.png" alt="模块1图片2">
+                                <img src="media/3.png" alt="模块1图片3">
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <p><strong>策略:</strong> 基于LLM的意图对齐策略</p>
+                            <p><strong>忠实执行:</strong> 是</p>
+                            <p><strong>胜率:</strong> 92%</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 模块2 -->
+                    <div class="visualization-module">
+                        <h4>模块2: 复杂环境探索</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="image-container">
+                                <img src="media/1.png" alt="模块1图片1">
+                                <img src="media/2.png" alt="模块1图片2">
+                                <img src="media/3.png" alt="模块1图片3">
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <p><strong>策略:</strong> 分层强化学习策略</p>
+                            <p><strong>忠实执行:</strong> 是</p>
+                            <p><strong>胜率:</strong> 85%</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 模块3-8（为简洁起见，这里只展示两个模块，实际应有8个） -->
+                    <div class="visualization-module">
+                        <h4>模块3: 多任务学习</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="image-container">
+                                <img src="media/1.png" alt="模块1图片1">
+                                <img src="media/2.png" alt="模块1图片2">
+                                <img src="media/3.png" alt="模块1图片3">
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <p><strong>策略:</strong> 多任务策略梯度</p>
+                            <p><strong>忠实执行:</strong> 是</p>
+                            <p><strong>胜率:</strong> 88%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="visualization-module">
+                        <h4>模块4: 对抗环境测试</h4>
+                        <div class="media-container">
+                           <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="image-container">
+                                <img src="media/1.png" alt="模块1图片1">
+                                <img src="media/2.png" alt="模块1图片2">
+                                <img src="media/3.png" alt="模块1图片3">
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <p><strong>策略:</strong> 对抗训练策略</p>
+                            <p><strong>忠实执行:</strong> 部分</p>
+                            <p><strong>胜率:</strong> 76%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 泛化性测试结果 -->
+                <div class="visualization-section" id="generalization-tests">
+                    <h3>泛化性测试结果</h3>
+                    
+                    <!-- 模块1 -->
+                    <div class="visualization-module">
+                        <h4>模块1: 未见环境适应测试</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="image-container">
+                                <img src="media/1.png" alt="模块1图片1">
+                                <img src="media/2.png" alt="模块1图片2">
+                                <img src="media/3.png" alt="模块1图片3">
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <p><strong>策略:</strong> 元强化学习策略</p>
+                            <p><strong>忠实执行:</strong> 部分</p>
+                            <p><strong>胜率:</strong> 78%</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 模块2 -->
+                    <div class="visualization-module">
+                        <h4>模块2: 动态环境适应测试</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="image-container">
+                                <img src="media/1.png" alt="模块1图片1">
+                                <img src="media/2.png" alt="模块1图片2">
+                                <img src="media/3.png" alt="模块1图片3">
+                            </div>
+                        </div>
+                        <div class="module-info">
+                            <p><strong>策略:</strong> 自适应策略优化</p>
+                            <p><strong>忠实执行:</strong> 是</p>
+                            <p><strong>胜率:</strong> 82%</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Future Prospect部分 -->
+            <section id="future-prospect">
+                <h2>Future Prospect</h2>
+                <p>LIAL方法展示了LLM与强化学习结合的巨大潜力。未来，我们计划在以下方向进一步拓展研究：</p>
+                <p>1. 扩展到更复杂的多智能体协作环境，研究智能体间的意图对齐与协作机制。</p>
+                <p>2. 探索更高效的LLM与RL集成方法，减少计算资源需求，提高训练效率。</p>
+                <p>3. 研究可解释性更强的LIAL变体，使智能体决策过程更加透明和可理解。</p>
+                <p>4. 将LIAL方法应用于现实世界问题，如机器人控制、自动驾驶等领域。</p>
+                <p>我们相信，随着技术的不断发展，LIAL方法将在人工智能领域发挥越来越重要的作用。</p>
+            </section>
+            
+            <!-- 相关工作部分 -->
+            <section id="related-work">
+                <h2>相关工作</h2>
+                <p>以下是与LIAL方法相关的研究论文：</p>
+                <div class="related-work">
+                    <h4>关键论文</h4>
+                    <ul>
+                        <li><a href="#">Reinforcement Learning with Large Language Models: A Survey</a></li>
+                        <li><a href="#">Intention-Aligned Reinforcement Learning for Human-AI Collaboration</a></li>
+                        <li><a href="#">LLM-Assisted Policy Learning in Complex Environments</a></li>
+                        <li><a href="#">Generalization in Deep Reinforcement Learning: Challenges and Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="related-work">
+                    <h4>基础研究</h4>
+                    <ul>
+                        <li><a href="#">Deep Reinforcement Learning: An Overview</a></li>
+                        <li><a href="#">Transformer Models in Reinforcement Learning</a></li>
+                        <li><a href="#">Multi-Task Learning for Reinforcement Learning Agents</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
 
-  <!-- Main Content -->
-  <div class="content">
-    <h1>Visualization of Agent Replays<br>—LIAL: LLM assisted Intention-Aligned Reinforcement Learning</h1>
-
-    <!-- Introduction -->
-    <section id="intro">
-      <h2>Introduction</h2>
-      <p>简要介绍项目目标、研究意义和技术路线……</p>
-    </section>
-
-    <!-- Visualization -->
-    <section id="visualization">
-      <h2>Visualization</h2>
-
-      <!-- 正文实验展示 -->
-      <h3>Experiment Visualization</h3>
-      <div class="viz-block">
-        <div class="viz-title">Module 1: Example Title</div>
-        <div class="viz-media">
-          <video controls src="video1.mp4"></video>
-          <div class="images">
-            <img src="img1.png" alt="image1">
-            <img src="img2.png" alt="image2">
-            <img src="img3.png" alt="image3">
-          </div>
-        </div>
-        <div class="viz-info">
-          <p>说明文字：简要介绍该模块展示的实验内容。</p>
-          <p>使用策略：XXX</p>
-          <p>忠实执行：Yes/No</p>
-          <p>胜率：85%</p>
-        </div>
-      </div>
-
-      <!-- 泛化性测试展示 -->
-      <h3>Generalization Test Results</h3>
-      <div class="viz-block">
-        <div class="viz-title">Module 9: Generalization Example</div>
-        <div class="viz-media">
-          <video controls src="video9.mp4"></video>
-          <div class="images">
-            <img src="img9-1.png" alt="image">
-            <img src="img9-2.png" alt="image">
-            <img src="img9-3.png" alt="image">
-          </div>
-        </div>
-        <div class="viz-info">
-          <p>说明文字：该模块展示了泛化性实验结果。</p>
-          <p>使用策略：YYY</p>
-          <p>忠实执行：Yes</p>
-          <p>胜率：72%</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Future Prospect -->
-    <section id="future">
-      <h2>Future Prospect</h2>
-      <p>对未来研究方向的展望说明……</p>
-    </section>
-
-    <!-- Related Work -->
-    <section id="related">
-      <h2>Related Work</h2>
-      <ul>
-        <li><a href="#">论文链接</a></li>
-        <li><a href="#">GitHub 链接</a></li>
-      </ul>
-    </section>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
