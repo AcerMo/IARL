@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualization of Agent Replays —LIAL: LLM assisted Intention-Aligned Reinforcement Learning</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Visualization of Agent Replays</h1>
-        <p>LIAL: LLM assisted Intention-Aligned Reinforcement Learning</p>
-    </header>
-    
     <div class="container">
         <!-- 左侧导航栏 -->
         <nav class="sidebar">
-            <h2>目录</h2>
-            <ul>
-                <li><a href="#introduction" class="active">Introduction</a></li>
-                <li><a href="#visualization">Visualization</a>
-                    <ul>
-                        <li><a href="#main-experiments">主要实验可视化</a></li>
-                        <li><a href="#generalization-tests">泛化性测试结果</a></li>
+            <div class="sidebar-header">
+                <h1>Visualization of Agent Replays</h1>
+                <h2>LIAL: LLM assisted Intention-Aligned Reinforcement Learning</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#introduction">Introduction</a></li>
+                <li>
+                    <a href="#visualization">Visualization</a>
+                    <ul class="sub-nav">
+                        <li><a href="#main-experiments">Main Experiments</a></li>
+                        <li><a href="#generalization-tests">Generalization Tests</a></li>
                     </ul>
                 </li>
                 <li><a href="#future-prospect">Future Prospect</a></li>
-                <li><a href="#related-work">相关工作</a></li>
+                <li><a href="#related-work">Related Work</a></li>
             </ul>
         </nav>
         
@@ -34,152 +33,261 @@
             <!-- Introduction部分 -->
             <section id="introduction">
                 <h2>Introduction</h2>
-                <p>LIAL (LLM assisted Intention-Aligned Reinforcement Learning) 是一种创新的强化学习方法，通过结合大型语言模型（LLM）与强化学习算法，实现更高效、更符合人类意图的智能体训练。</p>
-                <p>本项目展示了LIAL方法在不同环境下的表现，通过可视化回放直观展示智能体的学习过程和策略执行效果。我们的方法在多个基准测试中表现出色，特别是在复杂环境和泛化任务中。</p>
-                <p>通过本可视化平台，您可以深入了解LIAL方法的工作原理、性能表现以及未来应用前景。</p>
+                <p>LIAL (LLM assisted Intention-Aligned Reinforcement Learning) is an innovative approach that combines Large Language Models (LLMs) with reinforcement learning to create agents that better align with human intentions. This project focuses on visualizing agent replays to better understand and analyze the behavior of these intention-aligned agents.</p>
+                <p>Our methodology integrates LLM-based intention modeling with traditional RL algorithms, allowing agents to not only maximize rewards but also align their behavior with specified intentions. This alignment is crucial for deploying AI systems in real-world scenarios where understanding and predictability are essential.</p>
+                <p>The visualization platform presented here allows researchers to examine agent behavior across various tasks and environments, providing insights into how intention alignment affects performance and decision-making processes.</p>
             </section>
             
             <!-- Visualization部分 -->
             <section id="visualization">
                 <h2>Visualization</h2>
                 
-                <!-- 主要实验可视化 -->
-                <div class="visualization-section" id="main-experiments">
-                    <h3>主要实验可视化</h3>
+                <!-- 主实验部分 -->
+                <div id="main-experiments">
+                    <h3>Main Experiments</h3>
                     
-                    <!-- 模块1 -->
+                    <!-- 实验模块1 -->
                     <div class="visualization-module">
-                        <h4>模块1: 基础导航任务</h4>
+                        <h4>Task 1: Navigation in Complex Environment</h4>
                         <div class="media-container">
                             <div class="video-container">
                                 <video controls>
                                     <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="image-container">
-                                <img src="media/1.png" alt="模块1图片1">
-                                <img src="media/2.png" alt="模块1图片2">
-                                <img src="media/3.png" alt="模块1图片3">
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Path visualization">
+                                <img src="media/2.png" alt="Decision points">
+                                <img src="media/3.png" alt="State transitions">
+                                <img src="media/4.png" alt="Performance metrics">
                             </div>
                         </div>
-                        <div class="module-info">
-                            <p><strong>策略:</strong> 基于LLM的意图对齐策略</p>
-                            <p><strong>忠实执行:</strong> 是</p>
-                            <p><strong>胜率:</strong> 92%</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> PPO with LLM intention modeling</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 87%</div>
                         </div>
                     </div>
                     
-                    <!-- 模块2 -->
+                    <!-- 实验模块2 -->
                     <div class="visualization-module">
-                        <h4>模块2: 复杂环境探索</h4>
+                        <h4>Task 2: Multi-Agent Coordination</h4>
                         <div class="media-container">
                             <div class="video-container">
                                 <video controls>
                                     <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="image-container">
-                                <img src="media/1.png" alt="模块1图片1">
-                                <img src="media/2.png" alt="模块1图片2">
-                                <img src="media/3.png" alt="模块1图片3">
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Communication patterns">
+                                <img src="media/2.png" alt="Role assignment">
+                                <img src="media/3.png" alt="Joint actions">
+                                <img src="media/4.png" alt="Success rate over time">
                             </div>
                         </div>
-                        <div class="module-info">
-                            <p><strong>策略:</strong> 分层强化学习策略</p>
-                            <p><strong>忠实执行:</strong> 是</p>
-                            <p><strong>胜率:</strong> 85%</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> MADDPG with intention sharing</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Partially</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 72%</div>
                         </div>
                     </div>
                     
-                    <!-- 模块3-8（为简洁起见，这里只展示两个模块，实际应有8个） -->
+                    <!-- 实验模块3 -->
                     <div class="visualization-module">
-                        <h4>模块3: 多任务学习</h4>
+                        <h4>Task 3: Resource Management</h4>
                         <div class="media-container">
                             <div class="video-container">
                                 <video controls>
                                     <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="image-container">
-                                <img src="media/1.png" alt="模块1图片1">
-                                <img src="media/2.png" alt="模块1图片2">
-                                <img src="media/3.png" alt="模块1图片3">
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Resource distribution">
+                                <img src="media/2.png" alt="Optimization process">
+                                <img src="media/3.png" alt="Efficiency metrics">
+                                <img src="media/4.png" alt="Comparison baseline">
                             </div>
                         </div>
-                        <div class="module-info">
-                            <p><strong>策略:</strong> 多任务策略梯度</p>
-                            <p><strong>忠实执行:</strong> 是</p>
-                            <p><strong>胜率:</strong> 88%</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> A2C with constrained optimization</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 91%</div>
                         </div>
                     </div>
                     
+                    <!-- 实验模块4 -->
                     <div class="visualization-module">
-                        <h4>模块4: 对抗环境测试</h4>
+                        <h4>Task 4: Strategic Game Playing</h4>
                         <div class="media-container">
-                           <div class="video-container">
+                            <div class="video-container">
                                 <video controls>
                                     <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="image-container">
-                                <img src="media/1.png" alt="模块1图片1">
-                                <img src="media/2.png" alt="模块1图片2">
-                                <img src="media/3.png" alt="模块1图片3">
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Game state analysis">
+                                <img src="media/2.png" alt="Strategy selection">
+                                <img src="media/3.png" alt="Opponent modeling">
+                                <img src="media/4.png" alt="Win probability">
                             </div>
                         </div>
-                        <div class="module-info">
-                            <p><strong>策略:</strong> 对抗训练策略</p>
-                            <p><strong>忠实执行:</strong> 部分</p>
-                            <p><strong>胜率:</strong> 76%</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> DQN with hierarchical planning</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 83%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 实验模块5 -->
+                    <div class="visualization-module">
+                        <h4>Task 5: Dynamic Environment Adaptation</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Environment changes">
+                                <img src="media/2.png" alt="Adaptation process">
+                                <img src="media/3.png" alt="Performance stability">
+                                <img src="media/4.png" alt="Comparison with baseline">
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> SAC with meta-learning</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Mostly</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 79%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 实验模块6 -->
+                    <div class="visualization-module">
+                        <h4>Task 6: Long-term Planning</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Planning horizon">
+                                <img src="media/2.png" alt="Decision tree">
+                                <img src="media/3.png" alt="Value function">
+                                <img src="media/4.png" alt="Execution accuracy">
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> PPO with hierarchical RL</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 88%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 实验模块7 -->
+                    <div class="visualization-module">
+                        <h4>Task 7: Multi-Objective Optimization</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Objective weights">
+                                <img src="media/2.png" alt="Trade-off analysis">
+                                <img src="media/3.png" alt="Pareto front">
+                                <img src="media/4.png" alt="Performance metrics">
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> Multi-objective PPO</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Partially</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 75%</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 实验模块8 -->
+                    <div class="visualization-module">
+                        <h4>Task 8: Communication Learning</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Message encoding">
+                                <img src="media/2.png" alt="Communication protocol">
+                                <img src="media/3.png" alt="Coordination efficiency">
+                                <img src="media/4.png" alt="Comparison with no-communication">
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> CommNet with attention</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 85%</div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- 泛化性测试结果 -->
-                <div class="visualization-section" id="generalization-tests">
-                    <h3>泛化性测试结果</h3>
+                <!-- 泛化性测试部分 -->
+                <div id="generalization-tests">
+                    <h3>Generalization Tests</h3>
                     
-                    <!-- 模块1 -->
+                    <!-- 泛化测试1 -->
                     <div class="visualization-module">
-                        <h4>模块1: 未见环境适应测试</h4>
+                        <h4>Generalization Test 1: Unseen Environments</h4>
                         <div class="media-container">
                             <div class="video-container">
                                 <video controls>
                                     <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="image-container">
-                                <img src="media/1.png" alt="模块1图片1">
-                                <img src="media/2.png" alt="模块1图片2">
-                                <img src="media/3.png" alt="模块1图片3">
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Environment A">
+                                <img src="media/2.png" alt="Environment B">
+                                <img src="media/3.png" alt="Environment C">
+                                <img src="media/4.png" alt="Performance comparison">
                             </div>
                         </div>
-                        <div class="module-info">
-                            <p><strong>策略:</strong> 元强化学习策略</p>
-                            <p><strong>忠实执行:</strong> 部分</p>
-                            <p><strong>胜率:</strong> 78%</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> Transfer learning with fine-tuning</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Success Rate:</strong> 78%</div>
                         </div>
                     </div>
                     
-                    <!-- 模块2 -->
+                    <!-- 泛化测试2 -->
                     <div class="visualization-module">
-                        <h4>模块2: 动态环境适应测试</h4>
+                        <h4>Generalization Test 2: Adversarial Scenarios</h4>
                         <div class="media-container">
                             <div class="video-container">
                                 <video controls>
                                     <source src="media/宇宙.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="image-container">
-                                <img src="media/1.png" alt="模块1图片1">
-                                <img src="media/2.png" alt="模块1图片2">
-                                <img src="media/3.png" alt="模块1图片3">
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Scenario 1">
+                                <img src="media/2.png" alt="Scenario 2">
+                                <img src="media/3.png" alt="Robustness metrics">
+                                <img src="media/4.png" alt="Failure analysis">
                             </div>
                         </div>
-                        <div class="module-info">
-                            <p><strong>策略:</strong> 自适应策略优化</p>
-                            <p><strong>忠实执行:</strong> 是</p>
-                            <p><strong>胜率:</strong> 82%</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> Robust PPO with adversarial training</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Mostly</div>
+                            <div class="stat-item"><strong>Success Rate:</strong> 65%</div>
                         </div>
                     </div>
                 </div>
@@ -188,39 +296,71 @@
             <!-- Future Prospect部分 -->
             <section id="future-prospect">
                 <h2>Future Prospect</h2>
-                <p>LIAL方法展示了LLM与强化学习结合的巨大潜力。未来，我们计划在以下方向进一步拓展研究：</p>
-                <p>1. 扩展到更复杂的多智能体协作环境，研究智能体间的意图对齐与协作机制。</p>
-                <p>2. 探索更高效的LLM与RL集成方法，减少计算资源需求，提高训练效率。</p>
-                <p>3. 研究可解释性更强的LIAL变体，使智能体决策过程更加透明和可理解。</p>
-                <p>4. 将LIAL方法应用于现实世界问题，如机器人控制、自动驾驶等领域。</p>
-                <p>我们相信，随着技术的不断发展，LIAL方法将在人工智能领域发挥越来越重要的作用。</p>
+                <p>The LIAL framework opens up several promising directions for future research. Our immediate plans include extending the intention modeling capabilities to handle more complex and nuanced human instructions, potentially incorporating multimodal inputs beyond text.</p>
+                <p>We are also exploring ways to improve the sample efficiency of our approach, particularly in scenarios where interactions with the environment are costly or time-consuming. This includes investigating meta-learning techniques and few-shot adaptation strategies.</p>
+                <p>Long-term, we envision LIAL evolving into a comprehensive framework for developing AI systems that can reliably understand and execute complex human intentions across diverse domains, from robotics to decision support systems.</p>
+                <p>Another important direction is improving the interpretability of intention-aligned agents. We plan to develop visualization tools that not only show what the agent is doing but also why it's making specific decisions in relation to the given intentions.</p>
             </section>
             
-            <!-- 相关工作部分 -->
+            <!-- Related Work部分 -->
             <section id="related-work">
-                <h2>相关工作</h2>
-                <p>以下是与LIAL方法相关的研究论文：</p>
-                <div class="related-work">
-                    <h4>关键论文</h4>
-                    <ul>
-                        <li><a href="#">Reinforcement Learning with Large Language Models: A Survey</a></li>
-                        <li><a href="#">Intention-Aligned Reinforcement Learning for Human-AI Collaboration</a></li>
-                        <li><a href="#">LLM-Assisted Policy Learning in Complex Environments</a></li>
-                        <li><a href="#">Generalization in Deep Reinforcement Learning: Challenges and Solutions</a></li>
-                    </ul>
-                </div>
-                <div class="related-work">
-                    <h4>基础研究</h4>
-                    <ul>
-                        <li><a href="#">Deep Reinforcement Learning: An Overview</a></li>
-                        <li><a href="#">Transformer Models in Reinforcement Learning</a></li>
-                        <li><a href="#">Multi-Task Learning for Reinforcement Learning Agents</a></li>
-                    </ul>
-                </div>
+                <h2>Related Work</h2>
+                <ul class="reference-list">
+                    <li><a href="#">Brown, T. B., et al. (2020). Language Models are Few-Shot Learners. Advances in Neural Information Processing Systems.</a></li>
+                    <li><a href="#">OpenAI. (2023). GPT-4 Technical Report. arXiv preprint.</a></li>
+                    <li><a href="#">Schulman, J., et al. (2017). Proximal Policy Optimization Algorithms. arXiv preprint.</a></li>
+                    <li><a href="#">Lowe, R., et al. (2017). Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments. Advances in Neural Information Processing Systems.</a></li>
+                    <li><a href="#">Christiano, P. F., et al. (2017). Deep Reinforcement Learning from Human Preferences. Advances in Neural Information Processing Systems.</a></li>
+                    <li><a href="#">Abbeel, P., & Ng, A. Y. (2004). Apprenticeship learning via inverse reinforcement learning. Proceedings of the twenty-first international conference on Machine learning.</a></li>
+                    <li><a href="#">Leike, J., et al. (2018). AI safety gridworlds. arXiv preprint.</a></li>
+                    <li><a href="#">Hadfield-Menell, D., et al. (2016). Cooperative Inverse Reinforcement Learning. Advances in Neural Information Processing Systems.</a></li>
+                </ul>
             </section>
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 导航栏高亮当前部分
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section, .visualization-module');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= (sectionTop - 100)) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
