@@ -46,13 +46,54 @@
                 <div id="main-experiments">
                     <h3>Main Experiments</h3>
                     
-                    <!-- 实验模块1 -->
                     <div class="visualization-module">
                         <h4>Task 1: Navigation in Complex Environment</h4>
                         <div class="media-container">
                             <div class="video-container">
                                 <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
+                                    <source src="media/test.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="images-container">
+                                <img src="media/1.png" alt="Path visualization">
+                                <img src="media/2.png" alt="Decision points">
+                                <img src="media/3.png" alt="State transitions">
+                                <img src="media/4.png" alt="Performance metrics">
+                            </div>
+                            <!-- 新增文字描述区域 -->
+                            <div class="description-container">
+                                <h5>Module Description</h5>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <ul>
+                                    <li><strong>Key Findings:</strong> The agent successfully navigates through obstacles with 87% success rate</li>
+                                    <li><strong>Behavior Analysis:</strong> Shows consistent intention alignment throughout the task</li>
+                                    <li><strong>Technical Details:</strong> Uses PPO algorithm with LLM-based intention modeling</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div class="stat-item"><strong>Policy:</strong> PPO with LLM intention modeling</div>
+                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
+                            <div class="stat-item"><strong>Win Rate:</strong> 87%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 泛化性测试部分 -->
+                <div id="generalization-tests">
+                    <h3>Generalization Tests</h3>
+                    
+                    <div class="visualization-module">
+                        <h4>Task 1: Navigation in Complex Environment</h4>
+                        <div class="media-container">
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="media/test.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -62,232 +103,21 @@
                                 <img src="media/3.png" alt="State transitions">
                                 <img src="media/4.png" alt="Performance metrics">
                             </div>
+                            <!-- 新增文字描述区域 -->
+                            <div class="description-container">
+                                <h5>Module Description</h5>
+                                <p>This module demonstrates the agent's navigation capabilities in complex environments. The video shows the complete trajectory, while the images provide detailed analysis of key decision points and performance metrics.</p>
+                                <ul>
+                                    <li><strong>Key Findings:</strong> The agent successfully navigates through obstacles with 87% success rate</li>
+                                    <li><strong>Behavior Analysis:</strong> Shows consistent intention alignment throughout the task</li>
+                                    <li><strong>Technical Details:</strong> Uses PPO algorithm with LLM-based intention modeling</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="stats">
                             <div class="stat-item"><strong>Policy:</strong> PPO with LLM intention modeling</div>
                             <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
                             <div class="stat-item"><strong>Win Rate:</strong> 87%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块2 -->
-                    <div class="visualization-module">
-                        <h4>Task 2: Multi-Agent Coordination</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Communication patterns">
-                                <img src="media/2.png" alt="Role assignment">
-                                <img src="media/3.png" alt="Joint actions">
-                                <img src="media/4.png" alt="Success rate over time">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> MADDPG with intention sharing</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Partially</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 72%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块3 -->
-                    <div class="visualization-module">
-                        <h4>Task 3: Resource Management</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Resource distribution">
-                                <img src="media/2.png" alt="Optimization process">
-                                <img src="media/3.png" alt="Efficiency metrics">
-                                <img src="media/4.png" alt="Comparison baseline">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> A2C with constrained optimization</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 91%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块4 -->
-                    <div class="visualization-module">
-                        <h4>Task 4: Strategic Game Playing</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Game state analysis">
-                                <img src="media/2.png" alt="Strategy selection">
-                                <img src="media/3.png" alt="Opponent modeling">
-                                <img src="media/4.png" alt="Win probability">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> DQN with hierarchical planning</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 83%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块5 -->
-                    <div class="visualization-module">
-                        <h4>Task 5: Dynamic Environment Adaptation</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Environment changes">
-                                <img src="media/2.png" alt="Adaptation process">
-                                <img src="media/3.png" alt="Performance stability">
-                                <img src="media/4.png" alt="Comparison with baseline">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> SAC with meta-learning</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Mostly</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 79%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块6 -->
-                    <div class="visualization-module">
-                        <h4>Task 6: Long-term Planning</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Planning horizon">
-                                <img src="media/2.png" alt="Decision tree">
-                                <img src="media/3.png" alt="Value function">
-                                <img src="media/4.png" alt="Execution accuracy">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> PPO with hierarchical RL</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 88%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块7 -->
-                    <div class="visualization-module">
-                        <h4>Task 7: Multi-Objective Optimization</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Objective weights">
-                                <img src="media/2.png" alt="Trade-off analysis">
-                                <img src="media/3.png" alt="Pareto front">
-                                <img src="media/4.png" alt="Performance metrics">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> Multi-objective PPO</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Partially</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 75%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 实验模块8 -->
-                    <div class="visualization-module">
-                        <h4>Task 8: Communication Learning</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Message encoding">
-                                <img src="media/2.png" alt="Communication protocol">
-                                <img src="media/3.png" alt="Coordination efficiency">
-                                <img src="media/4.png" alt="Comparison with no-communication">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> CommNet with attention</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
-                            <div class="stat-item"><strong>Win Rate:</strong> 85%</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 泛化性测试部分 -->
-                <div id="generalization-tests">
-                    <h3>Generalization Tests</h3>
-                    
-                    <!-- 泛化测试1 -->
-                    <div class="visualization-module">
-                        <h4>Generalization Test 1: Unseen Environments</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Environment A">
-                                <img src="media/2.png" alt="Environment B">
-                                <img src="media/3.png" alt="Environment C">
-                                <img src="media/4.png" alt="Performance comparison">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> Transfer learning with fine-tuning</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Yes</div>
-                            <div class="stat-item"><strong>Success Rate:</strong> 78%</div>
-                        </div>
-                    </div>
-                    
-                    <!-- 泛化测试2 -->
-                    <div class="visualization-module">
-                        <h4>Generalization Test 2: Adversarial Scenarios</h4>
-                        <div class="media-container">
-                            <div class="video-container">
-                                <video controls>
-                                    <source src="media/宇宙.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <div class="images-container">
-                                <img src="media/1.png" alt="Scenario 1">
-                                <img src="media/2.png" alt="Scenario 2">
-                                <img src="media/3.png" alt="Robustness metrics">
-                                <img src="media/4.png" alt="Failure analysis">
-                            </div>
-                        </div>
-                        <div class="stats">
-                            <div class="stat-item"><strong>Policy:</strong> Robust PPO with adversarial training</div>
-                            <div class="stat-item"><strong>Faithful Execution:</strong> Mostly</div>
-                            <div class="stat-item"><strong>Success Rate:</strong> 65%</div>
                         </div>
                     </div>
                 </div>
