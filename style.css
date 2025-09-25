@@ -141,10 +141,12 @@ h3 {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    max-width: 800px; /* 限制整体宽度 */
 }
 
 .video-container {
     flex: 1;
+    max-width: 400px; /* 限制视频宽度 */
 }
 
 .images-container {
@@ -153,11 +155,19 @@ h3 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    max-width: 350px; /* 限制图片区域宽度 */
 }
 
-video, img {
+video {
     width: 100%;
-    height: 100%;
+    height: 220px; /* 固定视频高度 */
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+img {
+    width: 100%;
+    height: 105px; /* 固定图片高度 */
     object-fit: cover;
     border-radius: var(--border-radius);
 }
@@ -169,6 +179,7 @@ video, img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 800px; /* 与媒体容器对齐 */
 }
 
 .stat-item {
